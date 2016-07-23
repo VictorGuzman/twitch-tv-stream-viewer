@@ -1,0 +1,90 @@
+// Color Variables
+$marvel-font: 'Marvel',
+sans-serif;
+$blue-back: rgb(5, 69, 128);
+$nav-back: rgb(3, 43, 79);
+$online-green: rgb(5, 128, 64);
+$offline-red: rgb(128, 5, 8);
+$closed-grey: rgb(156,175,193);
+body {
+  font-family: $marvel-font;
+  background-color: $blue-back;
+  padding-top: 70px;
+}
+
+.navbar-custom {
+  background-color: $nav-back;
+  border: none;
+  .navbar-brand {
+    font-size: 28px !important;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.undecorated-link {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.twitch-user-wrapper {
+  .channel-img {
+    width: 100px;
+  }
+  .channel-title {
+    word-wrap: break-word;
+    a {
+      color: $nav-back;
+      &:hover {
+        color: $nav-back;
+      }
+    }
+  }
+  p {
+    font-size: 20px;
+    margin: 7px 0px 0px 0px;
+  }
+}
+
+.online-color {
+  color: $online-green;
+}
+
+.offline-color {
+  color: $offline-red;
+}
+
+.closed-color {
+  color: $closed-grey;
+}
+
+.online-panel {
+  border: 4px solid $online-green;
+  border-radius: 15px;
+}
+
+.offline-panel {
+  border: 4px solid $offline-red;
+  border-radius: 15px;
+}
+
+.closed-panel {
+  border: 4px solid $closed-grey;
+  border-radius: 15px;
+}
+
+footer {
+  color: white;
+}

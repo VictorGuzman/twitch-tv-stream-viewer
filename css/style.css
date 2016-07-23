@@ -1,0 +1,80 @@
+body {
+  font-family: "Marvel", sans-serif;
+  background-color: #054580;
+  padding-top: 70px;
+}
+
+.navbar-custom {
+  background-color: #032b4f;
+  border: none;
+}
+.navbar-custom .navbar-brand {
+  font-size: 28px !important;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+.navbar-custom .navbar-brand:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.undecorated-link {
+  color: white;
+  text-decoration: none;
+}
+.undecorated-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.twitch-user-wrapper .channel-img {
+  width: 100px;
+}
+.twitch-user-wrapper .channel-title {
+  word-wrap: break-word;
+}
+.twitch-user-wrapper .channel-title a {
+  color: #032b4f;
+}
+.twitch-user-wrapper .channel-title a:hover {
+  color: #032b4f;
+}
+.twitch-user-wrapper p {
+  font-size: 20px;
+  margin: 7px 0px 0px 0px;
+}
+
+.online-color {
+  color: #058040;
+}
+
+.offline-color {
+  color: #800508;
+}
+
+.closed-color {
+  color: #9cafc1;
+}
+
+.online-panel {
+  border: 4px solid #058040;
+  border-radius: 15px;
+}
+
+.offline-panel {
+  border: 4px solid #800508;
+  border-radius: 15px;
+}
+
+.closed-panel {
+  border: 4px solid #9cafc1;
+  border-radius: 15px;
+}
+
+footer {
+  color: white;
+}
