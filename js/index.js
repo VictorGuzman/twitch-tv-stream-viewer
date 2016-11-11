@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 /* Call to - featured channels */
 function getTwitchFeaturedData() {
-  var apiFeaturedUrl = 'https://api.twitch.tv/kraken/streams/featured?limit=25&offset=0';
+  var apiFeaturedUrl = 'https://wind-bow.hyperdev.space/twitch-api/streams/featured?limit=25&offset=0';
   $.getJSON(apiFeaturedUrl, function(data) {
     data.featured.forEach(function(channelData) {
       // Channel is offline
@@ -36,7 +36,7 @@ function getTwitchData() {
     "comster404"
   ];
   providedChannelsArr.forEach(function(channel) {
-    var apiUrl = 'https://api.twitch.tv/kraken/streams/' + channel + '?callback=?';
+    var apiUrl = 'https://wind-bow.hyperdev.space/twitch-api/streams/' + channel + '?callback=?';
     $.getJSON(apiUrl, function(data) {
       // Channel is offline
       if (data.stream === null) {
@@ -56,7 +56,7 @@ function getTwitchData() {
 
 /* Builds up an offline channel object */
 function buildOfflineChannel(channel) {
-  var channelApiUrl = 'https://api.twitch.tv/kraken/channels/' + channel + '?callback=?';
+  var channelApiUrl = 'https://wind-bow.hyperdev.space/twitch-api/channels/' + channel + '?callback=?';
   $.getJSON(channelApiUrl, function(channelData) {
     var offlineChannelObj = {};
     offlineChannelObj["status"] = "Offline";
